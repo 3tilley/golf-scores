@@ -22,7 +22,7 @@ pub struct Fields {
     #[serde(rename = "tournament_object")]
     pub tournament_object: TournamentObject,
     #[serde(rename = "leaderboard_array")]
-    pub leaderboard_array: LeaderboardArray,
+    pub leaderboard_array: SportContentPlayer,
 }
 
 #[derive(Default, Debug, Clone, PartialEq, Serialize, Deserialize)]
@@ -63,7 +63,7 @@ pub struct LiveDetails {
 
 #[derive(Default, Debug, Clone, PartialEq, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct LeaderboardArray {
+pub struct SportContentPlayer {
     pub position: String,
     #[serde(rename = "player_id")]
     pub player_id: String,
